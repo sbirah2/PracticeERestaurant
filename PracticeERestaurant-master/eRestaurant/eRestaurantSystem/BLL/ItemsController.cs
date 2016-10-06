@@ -33,8 +33,8 @@ namespace eRestaurantSystem.BLL
                                                   ItemID = x.ItemID,
                                                   FoodDescription = x.Description,
                                                   CurrentPrice = x.CurrentPrice,
-                                                  TimesServed = 15
-                                                   //TimesServed = x.BillItems.Count()
+                                                  //TimesServed = 15
+                                                  TimesServed = x.BillItems.Count()
                                               }).ToList()
                               };
                 return results.ToList();
